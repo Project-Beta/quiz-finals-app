@@ -1,0 +1,61 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    animation: fadeIn 4s ease-in;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font: 100 8vw/1 'Josefin Sans';
+    color: #eee;
+}
+
+span.project {
+    font: 100 8vw/1 'Code Light';
+}
+
+span.beta {
+    font: 800 8vw/1 'Code';
+}
+
+div {
+    padding: 10px 60px;
+    margin: 5% 0 0 0;
+    border: 1px solid #eee;
+    font: 100 3vw/1 'Josefin Sans';
+    color: #eee;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+div:hover {
+    background: #eee;
+    color: #111;
+    transition: all 0.4s ease-out;
+}

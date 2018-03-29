@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Code';
+    src: url('../gfx/code-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Code Light';
+    src: url('../gfx/code-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../gfx/josefin_sans_light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Menlo';
+    src: url('../gfx/menlo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ProjectBeta Quiz</title>
+    <link href="../css/Quiz.css" rel="stylesheet">
+    <link href="../css/Typography.css" rel="stylesheet">
+    <link href="../css/ionicons.css" rel="stylesheet">
+    <script src="../js/Dynamic.js"></script>
+</head>
+
+<body oncontextmenu="return false;"  onkeydown="keyPress(event)">
+    
+    <!--  VISUAL ROUND SECTION  -->
+    <section class="visual" id="visual">
+        <h1 class="visual" id="initiateTitle">Visual Round</h1>
+		<div class="visual" id="startBtn" onclick="visualStart()">Start</div>
+        <img class="visual" id="image" src="../images/p1.png"></img>
+    </section>
+    
+    <h1 class="title"><span class="project">PROJECT</span><span class="beta">BETA</span>&nbsp;&nbsp;Quiz Finals</h1>
+
+    <section class="points">
+        <div id="points1">0</div>
+        <div id="points2">0</div>
+        <div id="points3">0</div>
+        <div id="points4">0</div>
+    </section>
+
+    <section class="bars">
+        <div id="bar1" style="height: 20%;">&nbsp;</div>
+        <div id="bar2" style="height: 20%;">&nbsp;</div>
+        <div id="bar3" style="height: 20%;">&nbsp;</div>
+        <div id="bar4" style="height: 20%;">&nbsp;</div>
+    </section>
+
+    <section class="btn">
+        <div class="btn">
+            <div onclick="increase('points1','bar1')"><span class="ion-android-arrow-up"></span></div>
+            <div onclick="decrease('points1','bar1')"><span class="ion-android-arrow-down"></span></div>
+        </div>
+        <div class="btn">
+            <div onclick="increase('points2','bar2')"><span class="ion-android-arrow-up"></span></div>
+            <div onclick="decrease('points2','bar2')"><span class="ion-android-arrow-down"></span></div>
+        </div>
+        <div class="btn">
+            <div onclick="increase('points3','bar3')"><span class="ion-android-arrow-up"></span></div>
+            <div onclick="decrease('points3','bar3')"><span class="ion-android-arrow-down"></span></div>
+        </div>
+        <div class="btn">
+            <div onclick="increase('points4','bar4')"><span class="ion-android-arrow-up"></span></div>
+            <div onclick="decrease('points4','bar4')"><span class="ion-android-arrow-down"></span></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
