@@ -29,6 +29,8 @@
 
 	.team
 		flex-direction column
-		justify-content space-around
+		justify-content space-between
+		width 20%
+		padding 5vh 0
 
 </style>

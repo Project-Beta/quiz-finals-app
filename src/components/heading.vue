@@ -1,10 +1,9 @@
 <template lang="pug">
 
-	h1.title
+	h1.title.flex
 		span.codeLight PROJECT
 		span.codeBold BETA
-		span.codeLight &nbsp;&nbsp;Quiz
-		span.codeBold Finals
+		|&nbsp;&nbsp;Quiz Finals
 
 </template>
 
@@ -20,18 +19,21 @@
 <style lang="stylus" scoped>
 
 	h1
-		color white
+		color #eee
 		font-weight 100
 		text-align center
-		font-size 4vw
 		width 100%
 		padding 0.3em 0
-		border-bottom 1px solid #ccc
+		font-family "IBM Plex Sans", sans-serif
+		height 15vh
+		vertical-align bottom
+		font-size 3vw
 
 		&:hover
 			cursor none
 
 	span
+		font-size 4vw
 
 		&.codeLight
 			font-family "Code Light"

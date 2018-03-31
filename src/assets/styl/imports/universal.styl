@@ -1,13 +1,10 @@
-::selection
-    color #fff
-    background #d66d4dfc
-
 *
 	padding 0
 	margin 0
 	position relative
 	box-sizing border-box
 	text-rendering optimizeLegibility
+	user-select none
 
 *.flex
 	display flex
@@ -23,3 +20,6 @@
 *.container
 	width 100%
 	height 100%
+
+[contenteditable]:focus
+	outline 0px solid transparent

@@ -1,7 +1,7 @@
 <template lang="pug">
 
 	.points
-		p {{points}}
+		p(contenteditable) 0
 
 </template>
 
@@ -17,7 +17,7 @@
 <style lang="stylus" scoped>
 
 	.points
-		width 50%
+		width 80%
 		padding 2vh 0
 		border 0
 		border-top 2px solid #aaa
@@ -27,5 +27,8 @@
 		background transparent
 		transition all 0.3s ease-out
 		cursor default
+		font-size 2.5em
+		font-family "IBM Plex Sans"
+		cursor text
 
 </style>

@@ -1,14 +1,14 @@
 <template lang="pug">
 
 	.barContainer
-		.bar
+		.bar(v-bind:style="{ height: barHeight + '%' }")
 
 </template>
 
 <script>
 
 	export default {
-		name: "bar"
+		name: "bar",
 	}
 
 </script>
@@ -17,14 +17,16 @@
 <style lang="stylus" scoped>
 
 	.barContainer
-		width 6vw
-		height 500px
+		width 5vw
+		height 480px
 		padding 0
 		margin 0
-		background #eee
-		flex 0
 
 		.bar
-			height 100%
+			width 100%
+			height 10%
+			background #008080
+			bottom 0
+			position absolute
 
 </style>

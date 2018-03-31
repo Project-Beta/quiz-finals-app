@@ -2,17 +2,22 @@
 
 	.buttons
 
-		div
-			span up
-		div
-			span down
+		div.flex(v-on:click="barHeight++")
+			span ⬆
+		div.flex
+			span ⬇
 
 </template>
 
 <script>
 
 	export default {
-		name: "buttons"
+		name: "buttons",
+		data () {
+			return {
+				barHeight: 10
+			}
+		}
 	}
 
 </script>
@@ -23,7 +28,7 @@
 	.buttons
 		padding 0
 		margin 0
-		font 100 6vw/1
+		font-size 1.5em
 		color #eee
 		display flex
 		flex-direction column

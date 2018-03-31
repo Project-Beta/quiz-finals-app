@@ -4,12 +4,12 @@
 
 		heading
 
-		section.team.flex.container
+		section.main.flex.container
 
-			team
-			team
-			team
-			team
+			team(number=1)
+			team(number=2)
+			team(number=3)
+			team(number=4)
 
 		//- router-view
 
