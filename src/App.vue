@@ -4,6 +4,13 @@
 
 		heading
 
+		section.team.flex.container
+
+			team
+			team
+			team
+			team
+
 		//- router-view
 
 </template>
@@ -11,11 +18,13 @@
 <script>
 
 	import heading from "./components/heading"
+	import team from "./components/team"
 
 	export default {
 		name: "App",
 		components: {
-			heading
+			heading,
+			team
 		}
 	}
 
