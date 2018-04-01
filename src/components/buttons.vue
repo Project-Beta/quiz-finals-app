@@ -2,9 +2,9 @@
 
 	.buttons
 
-		div.flex(v-on:click="barHeight++")
+		div.flex(v-on:click="team.points = parseInt(team.points)+5")
 			span ⬆
-		div.flex
+		div.flex(v-on:click="team.points = parseInt(team.points)-5")
 			span ⬇
 
 </template>
@@ -13,11 +13,7 @@
 
 	export default {
 		name: "buttons",
-		data () {
-			return {
-				barHeight: 10
-			}
-		}
+		props: ["team"]
 	}
 
 </script>
@@ -40,7 +36,7 @@
 			margin 0
 			border 1px solid #eee
 			box-sizing border-box
-			transition all 0.3s ease-out
+			transition all 0.2s ease-out
 			width 100%
 			text-align center
 

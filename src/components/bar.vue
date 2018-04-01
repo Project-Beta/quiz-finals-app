@@ -1,7 +1,7 @@
 <template lang="pug">
 
 	.barContainer
-		.bar(v-bind:style="{ height: barHeight + '%' }")
+		.bar(:style="{ height: team.points + '%', background: team.background }")
 
 </template>
 
@@ -9,6 +9,7 @@
 
 	export default {
 		name: "bar",
+		props: ["team"]
 	}
 
 </script>
@@ -28,5 +29,8 @@
 			background #008080
 			bottom 0
 			position absolute
+			transition 0.2s all linear
+			max-height 100%
+			min-height 5%
 
 </style>

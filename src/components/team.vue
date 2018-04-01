@@ -1,10 +1,9 @@
 <template lang="pug">
 
 	.team.flex.container
-
-		points
-		bar
-		buttons
+		points(:team="team")
+		bar(:team="team")
+		buttons(:team="team")
 
 </template>
 
@@ -20,7 +19,8 @@
 			points,
 			bar,
 			buttons
-		}
+		},
+		props: ["team"]
 	}
 
 </script>

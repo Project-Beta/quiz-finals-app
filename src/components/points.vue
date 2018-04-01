@@ -1,14 +1,15 @@
 <template lang="pug">
 
 	.points
-		p(contenteditable) 0
+		input(v-model="team.points" type="number")
 
 </template>
 
 <script>
 
 	export default {
-		name: "points"
+		name: "points",
+		props: ["team"]
 	}
 
 </script>
@@ -21,14 +22,21 @@
 		padding 2vh 0
 		border 0
 		border-top 2px solid #aaa
-		color #eee
 		text-align center
 		box-sizing border-box
 		background transparent
 		transition all 0.3s ease-out
-		cursor default
-		font-size 2.5em
-		font-family "IBM Plex Sans"
 		cursor text
+
+		input
+			color #eee
+			font-size 30px
+			font-family "IBM Plex Sans"
+			background transparent
+			border none
+			width 100%
+			text-align center
+			outline none
+
 
 </style>
