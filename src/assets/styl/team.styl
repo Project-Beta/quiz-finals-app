@@ -1,0 +1,64 @@
+.team
+	flex-direction column
+	justify-content space-between
+	width 20%
+	padding 2vh 0 5vh 0
+
+.points
+	width 100%
+	padding 2vh 0
+	text-align center
+	box-sizing border-box
+	transition all 0.3s ease-out
+
+	input
+		color #fff
+		font-size 30px
+		font-family "IBM Plex Sans"
+		background transparent
+		border none
+		width 100%
+		text-align center
+		outline none
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button
+			display none
+
+.barContainer
+	width 5vw
+	height 600px
+	flex-direction column
+	justify-content flex-end
+
+	.bar
+		width 100%
+		height 10%
+		background #008080
+		transition 0.2s all linear
+		max-height 100%
+		min-height 1%
+		border-radius 3px
+
+.buttons
+	padding 0
+	color #eee
+	display flex
+	flex-direction column
+	align-items center
+	width 25%
+	border 1px solid #eee
+	border-radius 3px
+
+	div
+		font-size 1.7em
+		padding 0.3em
+		box-sizing border-box
+		transition all 0.2s ease-out
+		width 100%
+		text-align center
+
+		&:hover
+			cursor pointer
+			background #eee
+			color #222
