@@ -4,14 +4,14 @@
 
 		.barContainer.flex
 
-			.points
+			.points.flex
 
 				input(
 					v-model="team.points"
 					type="number"
 				)
 
-			.bar(:style="{ height: (team.points/highestPoints)*520 + 'px', background: team.background }")
+			.bar(:style="{ height: (team.points/highestPoints)*100 + '%', background: team.background }")
 
 		.buttons
 
