@@ -11,7 +11,7 @@
 					type="number"
 				)
 
-			.bar(:style="{ height: team.points + '%', background: team.background }")
+			.bar(:style="{ height: (team.points/highestPoints)*520 + 'px', background: team.background }")
 
 		.buttons
 
@@ -27,7 +27,7 @@
 
 	export default {
 		name: "team",
-		props: ["team"]
+		props: ["team", "highestPoints"]
 	}
 
 </script>

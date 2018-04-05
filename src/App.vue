@@ -4,13 +4,13 @@
 
 		vue-particles(
 			color="#555"
-			:particleOpacity="0.5"
+			:particleOpacity="0.2"
 			:particlesNumber="100"
 			shapeType="circle"
 			:particleSize="3"
 			linesColor="#333"
 			:linesWidth="1"
-			:lineLinked="true"
+			:lineLinked="false"
 			:lineOpacity="0.1"
 			:linesDistance="150"
 			:moveSpeed="3"
@@ -27,6 +27,7 @@
 			team(
 				v-for="team in teams"
 				:team="team"
+				:highestPoints="highestPoints"
 			)
 
 </template>
@@ -59,6 +60,14 @@
 						background: "linear-gradient(rgba(255, 179, 0, 1) 0%, rgba(255, 238, 88, 1) 100%)"
 					}
 				]
+			}
+		},
+		computed: {
+			highestPoints: function () {
+				var max = [this.teams[0].points, this.teams[1].points, this.teams[2].points, this.teams[3].points].reduce(function(a, b) {
+					return Math.max(a, b);
+				});
+				return max === 0 ? 1 : max;
 			}
 		}
 	}
