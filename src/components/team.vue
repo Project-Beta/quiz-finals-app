@@ -25,10 +25,10 @@
 
 <script>
 
-	export default {
-		name: "team",
-		props: ["team", "highestPoints"]
-	}
+export default {
+	name: "team",
+	props: ["team", "highestPoints"]
+};
 
 </script>
 

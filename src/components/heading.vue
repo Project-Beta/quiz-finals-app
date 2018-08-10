@@ -9,9 +9,9 @@
 
 <script>
 
-	export default {
-		name: "heading"
-	}
+export default {
+	name: "heading"
+};
 
 </script>
 
