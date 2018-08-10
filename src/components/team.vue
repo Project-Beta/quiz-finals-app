@@ -2,6 +2,11 @@
 
 	.team.flex.container
 
+		.name
+			input(
+				v-model="team.name"
+			)
+
 		.barContainer.flex
 
 			.points.flex
